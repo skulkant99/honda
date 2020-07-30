@@ -1,0 +1,135 @@
+    .wrap_filter{
+        margin: 10px 0 30px;
+    }
+ .wrap_mainmenu{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 500px;
+    background-color: #FFF;
+    height: 100%;
+    z-index: 999;
+    display: none;
+	}
+     .wrap_mainmenu.loading{
+         opacity: 0;
+         z-index: -10;
+         display: block;
+     }
+.mm_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 101;
+}
+    .top_cart{
+        position: relative;
+    }
+.btn_close_mm{
+    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 9;
+}
+ .btn_close_mm img{
+     width: 20px;
+     height: auto;
+     transform: rotate(180deg);
+ }
+.cartopen_head{
+        border-bottom: solid 1px #ddd;
+        position: relative;
+        padding-bottom: 5px;
+        margin:0 30px;
+    }
+    .box_btnfilter{
+        background-color: #d9d8d6;
+    }
+    .btn_filter{
+        background-color: #d9d8d6;
+        height: 40px;
+        text-transform: uppercase;
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        border: 0;
+        text-align: left;
+        font-weight: normal;
+        border-radius: 0 !important;
+        -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+    }
+    .btn_filter:before{
+        content: "";
+        background-image: url(../images/icon_arrowdown.svg);
+        background-size: 100%;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+    }
+    .box_btnfilter .btn_filter{
+        background-image: url(../images/icon_arrowdown.svg);
+        background-size: 15px;
+        background-position: right 15px center;
+        background-repeat: no-repeat;
+    }
+    .title_cartopen{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        vertical-align: top;
+        padding: 25px 0 10px;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail{
+            background: rgba(0,0,0,0.1);
+        }
+        .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+            background-color: #000;
+        }
+    .dropdown-menu{
+        width: 100%;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.05);
+        border: 0;
+        border-radius: 0;
+        padding: 0 15px 5px;
+    }
+    .dropdown-menu a{
+        border-bottom: 1px solid #ddd;
+        font-size: 15px;
+        color: #333;
+        padding: 7px 0;
+    }
+    .dropdown-menu a:last-child{
+        border-bottom: 0;
+    }
+    .filteropenbox{
+        padding-top: 25px;
+    }
+
+
+    @media (max-width: 575px){
+        .wrap_mainmenu{
+            width: 100%;
+        }
+        .cartopen_head, .box_filter{
+            margin-left: 20px;
+        }
+        .btn_close_mm{
+            left: 20px;
+        }
+        .btn_filter{
+            font-size: 14px;
+        }
+    }

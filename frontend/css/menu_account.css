@@ -1,0 +1,24 @@
+ .wrap_menumenber ul li{
+        list-style: none;
+        border-bottom: 1px solid #ddd;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+    .wrap_menumenber ul{
+        padding: 0;
+        margin: 0;
+    }
+    .wrap_menumenber ul li a{
+        color: #000;
+        transition: 0.5s;
+        font-size: 16px;
+    }
+    .wrap_menumenber ul li a:hover, .wrap_menumenber nav > ul > li > a.here{
+        text-decoration: none;
+        color: #888;
+    }
+    @media (max-width: 991px){
+        .wrap_menumenber{
+            display: none;
+        }
+    }  
